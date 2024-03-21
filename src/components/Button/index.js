@@ -1,10 +1,12 @@
 import "./index.css";
 
-export const Button = ({ children, onClick, icon }) => {
+export const Button = ({ children, onClick, variant, icon }) => {
   return (
     <button
       onClick={onClick}
-      className={`button-container${variant == "outline" ? "outline" : "main"}`}
+      className={`button-container ${
+        variant === "outline" ? "outline" : "main"
+      } `}
     >
       {icon && (
         <img

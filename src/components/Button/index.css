@@ -4,13 +4,19 @@
   justify-content: center;
   width: 100%;
   font-size: 14px;
-  color: white;
   font-weight: bold;
   font-family: "Avenir";
   border-radius: 24px;
   height: 42px;
   border: 0px;
   cursor: pointer;
+  border: 1px solid #7785db;
+}
+
+@media screen and (max-width: 420px) {
+  .button-container {
+    max-width: 300px;
+  }
 }
 
 .main {
